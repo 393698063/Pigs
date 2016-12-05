@@ -1,0 +1,5 @@
+{
+	HTTPConnectError = "\U65ad\U7f51\U5566\Uff0c\U8bf7\U68c0\U67e5\U7f51\U7edc\U8fde\U63a5\Uff01";
+	HTTPFlagError = "\U670d\U52a1\U5668\U8fd4\U56de\U6570\U636e\U9519\U8bef,\U8bf7\U8054\U7cfb\U670d\U52a1\U4eba\U5458!";
+	HTTPNilDataError = "\U8bf7\U6c42\U6570\U636e\U9519\U8bef,\U8bf7\U8054\U7cfb\U670d\U52a1\U4eba\U5458!";
+}

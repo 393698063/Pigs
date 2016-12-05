@@ -1,0 +1,77 @@
+10
+
+dir
+34510
+svn://qiaogang@10.0.9.232/Project/IOS/Apps/Pigs/Pigs/ThirdParty/UMSocial_Sdk_4.3
+svn://qiaogang@10.0.9.232
+
+
+
+2016-07-29T03:20:58.730065Z
+30456
+qiaogang
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+fc91d66a-655e-4f30-a69d-665abb3ce9bf
+
+SocialSDKXib
+dir
+
+en.lproj
+dir
+
+libUMSocial_Sdk_4.3.a
+file
+
+
+
+
+2016-11-04T06:08:24.000000Z
+296b9395d92e6bb0ae6f2aa56a1c188e
+2016-07-29T03:20:58.730065Z
+30456
+qiaogang
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+9520544
+
+Header
+dir
+
+UMSocialSDKResourcesNew.bundle
+dir
+
+zh-Hans.lproj
+dir
+

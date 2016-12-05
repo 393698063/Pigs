@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CHCPGDisCoverHomeViewController">
+            <connections>
+                <outlet property="iNavBar" destination="l1k-qS-dMy" id="6OF-p1-ODr"/>
+                <outlet property="iTableView" destination="ke3-Wn-IEw" id="kIE-Cj-PAU"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l1k-qS-dMy">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="O18-hr-vk4"/>
+                    </constraints>
+                    <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <textAttributes key="titleTextAttributes">
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </textAttributes>
+                    <items>
+                        <navigationItem id="KTr-Q2-253"/>
+                    </items>
+                </navigationBar>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="navigation_dis.png" translatesAutoresizingMaskIntoConstraints="NO" id="ASA-GQ-N7v">
+                    <rect key="frame" x="275" y="29" width="50" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="8H6-8l-6Jk"/>
+                        <constraint firstAttribute="width" constant="50" id="LbJ-FS-oBb"/>
+                    </constraints>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ke3-Wn-IEw">
+                    <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Jlt-9N-JEM"/>
+                        <outlet property="delegate" destination="-1" id="nfy-2o-TvC"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ke3-Wn-IEw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="0ch-wz-VlI"/>
+                <constraint firstItem="ASA-GQ-N7v" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="29" id="2BO-Aj-y7N"/>
+                <constraint firstItem="ke3-Wn-IEw" firstAttribute="top" secondItem="l1k-qS-dMy" secondAttribute="bottom" id="2Hy-Rm-AGw"/>
+                <constraint firstItem="l1k-qS-dMy" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="6Pl-I2-5or"/>
+                <constraint firstItem="l1k-qS-dMy" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="cWJ-hi-yLU"/>
+                <constraint firstAttribute="bottom" secondItem="ke3-Wn-IEw" secondAttribute="bottom" constant="49" id="caq-bw-2sc"/>
+                <constraint firstItem="ASA-GQ-N7v" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="hlX-37-fsE"/>
+                <constraint firstAttribute="trailing" secondItem="l1k-qS-dMy" secondAttribute="trailing" id="j6t-wZ-9sr"/>
+                <constraint firstAttribute="trailing" secondItem="ke3-Wn-IEw" secondAttribute="trailing" id="s8a-vQ-vpI"/>
+                <constraint firstItem="ke3-Wn-IEw" firstAttribute="top" secondItem="l1k-qS-dMy" secondAttribute="bottom" id="u3I-HY-Ua5"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="u3I-HY-Ua5"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+    <resources>
+        <image name="navigation_dis.png" width="50" height="25"/>
+    </resources>
+</document>

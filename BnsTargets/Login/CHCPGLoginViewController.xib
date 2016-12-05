@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CHCPGLoginViewController">
+            <connections>
+                <outlet property="iCodeButton" destination="Uyz-jO-ccc" id="IEj-XT-Vpb"/>
+                <outlet property="iCodeTextField" destination="Acb-na-NcZ" id="3hx-X4-iv5"/>
+                <outlet property="iNavBar" destination="Jmz-UD-oKU" id="W6P-6c-QJE"/>
+                <outlet property="iPhoneTextField" destination="OWx-cq-Nb4" id="4rt-jy-qaB"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jmz-UD-oKU">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="6eb-tf-MLD"/>
+                    </constraints>
+                    <color key="barTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <textAttributes key="titleTextAttributes">
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </textAttributes>
+                    <items>
+                        <navigationItem id="7Dd-l0-24l"/>
+                    </items>
+                </navigationBar>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入手机号码" textAlignment="natural" minimumFontSize="17" background="input.png" translatesAutoresizingMaskIntoConstraints="NO" id="OWx-cq-Nb4">
+                    <rect key="frame" x="10" y="74" width="580" height="46"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="46" id="TaB-wW-xxI"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="M1c-DE-1U3"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="短信验证码" textAlignment="natural" minimumFontSize="17" background="input.png" translatesAutoresizingMaskIntoConstraints="NO" id="Acb-na-NcZ">
+                    <rect key="frame" x="10" y="130" width="580" height="46"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="46" id="gJI-eM-L7y"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="Zlj-Sh-wuK"/>
+                    </connections>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zgI-eq-Zcb">
+                    <rect key="frame" x="0.0" y="20" width="64" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="ICv-Pn-Z3o"/>
+                        <constraint firstAttribute="width" constant="64" id="p4B-uJ-j9V"/>
+                    </constraints>
+                    <state key="normal" image="back.png"/>
+                    <connections>
+                        <action selector="leftButtonAction:" destination="-1" eventType="touchUpInside" id="Kg0-cQ-fIe"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uyz-jO-ccc">
+                    <rect key="frame" x="486" y="130" width="104" height="46"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="104" id="457-QC-B5b"/>
+                        <constraint firstAttribute="height" constant="46" id="81Z-Mp-KBp"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="获取验证码" backgroundImage="buttonBg_nor.png"/>
+                    <state key="disabled" backgroundImage="buttonBg.png"/>
+                    <connections>
+                        <action selector="getButtonAction:" destination="-1" eventType="touchUpInside" id="6oo-FG-Jez"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.93725490196078431" green="0.95294117647058818" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Uyz-jO-ccc" secondAttribute="trailing" constant="10" id="5wP-wH-uI8"/>
+                <constraint firstItem="OWx-cq-Nb4" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="86r-Ak-CAm"/>
+                <constraint firstItem="Jmz-UD-oKU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="9DL-i7-1hH"/>
+                <constraint firstItem="Acb-na-NcZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="Duw-6P-xAQ"/>
+                <constraint firstItem="zgI-eq-Zcb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="FAe-ED-xTa"/>
+                <constraint firstItem="OWx-cq-Nb4" firstAttribute="top" secondItem="zgI-eq-Zcb" secondAttribute="bottom" constant="10" id="JV0-tJ-Zdk"/>
+                <constraint firstAttribute="trailing" secondItem="Acb-na-NcZ" secondAttribute="trailing" constant="10" id="Mh1-hE-iK9"/>
+                <constraint firstItem="Acb-na-NcZ" firstAttribute="top" secondItem="OWx-cq-Nb4" secondAttribute="bottom" constant="10" id="Tth-k9-X2g"/>
+                <constraint firstAttribute="trailing" secondItem="Jmz-UD-oKU" secondAttribute="trailing" id="UJ2-7y-OMB"/>
+                <constraint firstItem="Jmz-UD-oKU" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="fab-KI-35y"/>
+                <constraint firstItem="zgI-eq-Zcb" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="gbR-Rs-EUt"/>
+                <constraint firstAttribute="trailing" secondItem="OWx-cq-Nb4" secondAttribute="trailing" constant="10" id="mHb-lK-hzy"/>
+                <constraint firstItem="Uyz-jO-ccc" firstAttribute="top" secondItem="OWx-cq-Nb4" secondAttribute="bottom" constant="10" id="qBP-7c-CA3"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="back.png" width="44" height="44"/>
+        <image name="buttonBg.png" width="104" height="44"/>
+        <image name="buttonBg_nor.png" width="104" height="44"/>
+        <image name="input.png" width="303" height="46"/>
+    </resources>
+</document>

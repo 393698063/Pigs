@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="CHCPGQuationPriceListCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="39.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N5f-kh-agf" userLabel="涨幅">
+                        <rect key="frame" x="274" y="11" width="35.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dvd-fO-rPE" userLabel="价格">
+                        <rect key="frame" x="125.5" y="11" width="70" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="x3A-15-8Aw"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HHc-Ui-ZEs" userLabel="日期">
+                        <rect key="frame" x="10" y="14" width="35.5" height="11.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="N5f-kh-agf" firstAttribute="centerY" secondItem="Dvd-fO-rPE" secondAttribute="centerY" id="6e7-wf-8Oc"/>
+                    <constraint firstAttribute="bottom" secondItem="HHc-Ui-ZEs" secondAttribute="bottom" constant="14" id="7dB-HF-fuE"/>
+                    <constraint firstItem="Dvd-fO-rPE" firstAttribute="centerY" secondItem="HHc-Ui-ZEs" secondAttribute="centerY" id="AJr-DK-hkU"/>
+                    <constraint firstAttribute="trailing" secondItem="N5f-kh-agf" secondAttribute="trailing" constant="10" id="SPY-f9-Smu"/>
+                    <constraint firstItem="Dvd-fO-rPE" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="WaY-eE-FzQ"/>
+                    <constraint firstItem="Dvd-fO-rPE" firstAttribute="leading" secondItem="HHc-Ui-ZEs" secondAttribute="trailing" constant="99" id="a0b-dw-EWd"/>
+                    <constraint firstItem="HHc-Ui-ZEs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="aNC-yA-vGV"/>
+                    <constraint firstItem="HHc-Ui-ZEs" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="14" id="bbA-Gg-zlH"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="a0b-dw-EWd"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="changeLabel" destination="N5f-kh-agf" id="pYE-zj-tkE"/>
+                <outlet property="dateLabel" destination="HHc-Ui-ZEs" id="cf0-7Y-AfE"/>
+                <outlet property="priceLabel" destination="Dvd-fO-rPE" id="kN5-DD-GYD"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

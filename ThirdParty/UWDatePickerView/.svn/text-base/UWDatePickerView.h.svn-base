@@ -1,0 +1,52 @@
+//
+//  UWDatePickerView.h
+//  UWDatePickerView
+//
+//  Created by Fengur on 15/11/04.
+//  Copyright © 2015年 Fengur. All rights reserved.
+//
+
+
+/**
+ *
+ ----------------------------------------------------------------------------------------------------
+ |
+ |   在调用datePicker的地方实现 setupDateView 方法，并调用，可在方法内自定义颜色，外观，字体，时间最大值及最小值。
+ |   同时需要实现时间确定选择后的代理方法 getSelectDate 该方法用来处理时间确认选择和取消选择的事件
+ |   有建议欢迎联系我 QQ:475739631
+ ----------------------------------------------------------------------------------------------------
+ */
+
+
+#import <UIKit/UIKit.h>
+
+@protocol UWDatePickerViewDelegate <NSObject>
+
+/**
+ *  选择日期确定后的代理事件
+ *
+ *  @param date 日期
+ */
+- (void)getSelectDate:(NSString *)date;
+
+@end
+
+@interface UWDatePickerView : UIView
+
++ (UWDatePickerView *)instanceDatePickerView;
+
+@property (weak, nonatomic) IBOutlet UIDatePicker *datePickerView;
+
+@property (nonatomic, copy) NSString * primaryDate;
+
+@property (nonatomic, weak) id<UWDatePickerViewDelegate> delegate;
+
+- (void)setPrimaryDate:(NSString *)primaryDate
+               MinDate:(NSString *)minDateStr
+            maxDateStr:(NSString *)maxDateStr;
+-(void)setMinDate:(NSDate *)aMinDate 
+          maxDate:(NSDate *)aMaxDate;
+@end
+// 版权属于原作者
+// http://code4app.com (cn) http://code4app.net (en)
+// 发布代码于最专业的源码分享网站: Code4App.com

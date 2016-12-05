@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="uqE-ee-kZH" customClass="CHCPGMineHomeActionView">
+            <rect key="frame" x="0.0" y="0.0" width="122" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wode_icon01.png" translatesAutoresizingMaskIntoConstraints="NO" id="8er-Me-Wlp">
+                    <rect key="frame" x="50" y="21" width="22" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="22" id="3M7-0r-7Wr"/>
+                        <constraint firstAttribute="height" constant="22" id="4Hc-vu-ol6"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="收藏" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pdy-I1-39W">
+                    <rect key="frame" x="0.0" y="53" width="121.5" height="14.5"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="14.5" id="o4y-4D-Pjr"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SyW-tv-Ch1">
+                    <rect key="frame" x="121" y="0.0" width="0.5" height="100"/>
+                    <color key="backgroundColor" red="0.84313725490000002" green="0.85490196080000003" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="0.5" id="9Nl-aR-PQc"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j0v-pV-4jj">
+                    <rect key="frame" x="0.0" y="99.5" width="121" height="0.5"/>
+                    <color key="backgroundColor" red="0.84313725490196079" green="0.85490196078431369" blue="0.8901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="nTH-bZ-5J3"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YYu-ZU-BO3">
+                    <rect key="frame" x="0.0" y="0.0" width="121" height="99.5"/>
+                    <connections>
+                        <action selector="tapAction:" destination="uqE-ee-kZH" eventType="touchUpInside" id="sms-5c-pYO"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="YYu-ZU-BO3" firstAttribute="top" secondItem="uqE-ee-kZH" secondAttribute="top" id="4Qe-ij-Q4Q"/>
+                <constraint firstItem="8er-Me-Wlp" firstAttribute="centerX" secondItem="uqE-ee-kZH" secondAttribute="centerX" id="5sY-t0-KzU"/>
+                <constraint firstItem="8er-Me-Wlp" firstAttribute="top" secondItem="uqE-ee-kZH" secondAttribute="top" constant="21.5" id="Imc-io-l0C"/>
+                <constraint firstItem="SyW-tv-Ch1" firstAttribute="leading" secondItem="pdy-I1-39W" secondAttribute="trailing" id="JZV-ea-ZJb"/>
+                <constraint firstItem="SyW-tv-Ch1" firstAttribute="leading" secondItem="j0v-pV-4jj" secondAttribute="trailing" id="Qrz-zh-RfB"/>
+                <constraint firstAttribute="bottom" secondItem="j0v-pV-4jj" secondAttribute="bottom" id="Rkr-Z7-2wG"/>
+                <constraint firstItem="pdy-I1-39W" firstAttribute="leading" secondItem="uqE-ee-kZH" secondAttribute="leading" id="UOe-0I-yPp"/>
+                <constraint firstItem="YYu-ZU-BO3" firstAttribute="leading" secondItem="uqE-ee-kZH" secondAttribute="leading" id="Zu5-DV-HtQ"/>
+                <constraint firstItem="j0v-pV-4jj" firstAttribute="top" secondItem="YYu-ZU-BO3" secondAttribute="bottom" id="cKo-kC-pYC"/>
+                <constraint firstItem="j0v-pV-4jj" firstAttribute="leading" secondItem="uqE-ee-kZH" secondAttribute="leading" id="fpn-dT-11h"/>
+                <constraint firstAttribute="bottom" secondItem="SyW-tv-Ch1" secondAttribute="bottom" id="gGe-No-wZu"/>
+                <constraint firstItem="SyW-tv-Ch1" firstAttribute="top" secondItem="uqE-ee-kZH" secondAttribute="top" id="jcf-av-Q6F"/>
+                <constraint firstAttribute="trailing" secondItem="SyW-tv-Ch1" secondAttribute="trailing" id="jqD-G6-Ekp"/>
+                <constraint firstItem="SyW-tv-Ch1" firstAttribute="leading" secondItem="YYu-ZU-BO3" secondAttribute="trailing" id="l8b-dX-G8B"/>
+                <constraint firstItem="pdy-I1-39W" firstAttribute="top" secondItem="8er-Me-Wlp" secondAttribute="bottom" constant="10" id="zVh-L4-HLR"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="iIconImageView" destination="8er-Me-Wlp" id="OH7-t0-KXx"/>
+                <outlet property="iTitle" destination="pdy-I1-39W" id="gYZ-zi-KR4"/>
+            </connections>
+            <point key="canvasLocation" x="140" y="-260"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="wode_icon01.png" width="22" height="22"/>
+    </resources>
+</document>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CHCPGAuthentifyImmediateViewController">
+            <connections>
+                <outlet property="iNavBar" destination="1xa-1M-7EO" id="I7g-kj-UWi"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1xa-1M-7EO">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="Th7-dC-Mgf"/>
+                    </constraints>
+                    <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <items>
+                        <navigationItem id="TWo-vB-Awx"/>
+                    </items>
+                </navigationBar>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XpW-UB-DAc">
+                    <rect key="frame" x="0.0" y="20" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="8Jk-z3-uM2"/>
+                        <constraint firstAttribute="width" constant="44" id="TYd-Sq-h7x"/>
+                    </constraints>
+                    <state key="normal" image="back.png"/>
+                    <connections>
+                        <action selector="leftButtonAction:" destination="-1" eventType="touchUpInside" id="yTd-CN-LoW"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xxi-IT-x6G">
+                    <rect key="frame" x="10" y="214" width="580" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="0Ig-07-lfe"/>
+                    </constraints>
+                    <state key="normal" title="马上认证" backgroundImage="zhuce_button_nor.png"/>
+                    <state key="highlighted" backgroundImage="zhuce_button_dis.png"/>
+                    <connections>
+                        <action selector="immediateAuthentify:" destination="-1" eventType="touchUpInside" id="RAE-a4-ia7"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rz_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="X70-BV-0hM">
+                    <rect key="frame" x="250" y="87" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="4tt-xH-3jB"/>
+                        <constraint firstAttribute="width" constant="100" id="l3G-ZP-go1"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.93725490199999995" green="0.95294117649999999" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="XpW-UB-DAc" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="I8k-05-GJu"/>
+                <constraint firstItem="1xa-1M-7EO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="J6R-30-85v"/>
+                <constraint firstItem="xxi-IT-x6G" firstAttribute="top" secondItem="X70-BV-0hM" secondAttribute="bottom" constant="27" id="Jkf-8A-efb"/>
+                <constraint firstItem="X70-BV-0hM" firstAttribute="top" secondItem="1xa-1M-7EO" secondAttribute="bottom" constant="23" id="Pas-4W-mMp"/>
+                <constraint firstItem="X70-BV-0hM" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="T5c-45-aZs"/>
+                <constraint firstAttribute="trailing" secondItem="xxi-IT-x6G" secondAttribute="trailing" constant="10" id="W81-bh-3Ja"/>
+                <constraint firstItem="1xa-1M-7EO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="dUI-fO-3vM"/>
+                <constraint firstAttribute="trailing" secondItem="1xa-1M-7EO" secondAttribute="trailing" id="j45-Wj-8W0"/>
+                <constraint firstItem="xxi-IT-x6G" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="jWS-1c-Hdv"/>
+                <constraint firstItem="XpW-UB-DAc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="tTd-WL-1fv"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="back.png" width="44" height="44"/>
+        <image name="rz_icon.png" width="100" height="100"/>
+        <image name="zhuce_button_dis.png" width="302" height="40"/>
+        <image name="zhuce_button_nor.png" width="302" height="40"/>
+    </resources>
+</document>

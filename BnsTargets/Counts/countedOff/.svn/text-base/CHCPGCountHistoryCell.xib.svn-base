@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="CHCPGCountHistoryCell" rowHeight="66" id="KGk-i7-Jjw" customClass="CHCPGCountHistoryCell">
+            <rect key="frame" x="0.0" y="0.0" width="327" height="66"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="327" height="65.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sWu-Lw-8OC">
+                        <rect key="frame" x="0.0" y="0.0" width="327" height="65.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dBT-kd-f6h">
+                                <rect key="frame" x="10" y="22" width="300" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="bkq-1N-MMJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gerenxinxi_back.png" translatesAutoresizingMaskIntoConstraints="NO" id="fVB-E7-uK3">
+                                <rect key="frame" x="310" y="27" width="7" height="11"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="11" id="59G-G1-EJd"/>
+                                    <constraint firstAttribute="width" constant="7" id="FUc-zm-FI5"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vph-QH-Tbq">
+                                <rect key="frame" x="0.0" y="0.0" width="327" height="0.5"/>
+                                <color key="backgroundColor" red="0.84313725490196079" green="0.85490196078431369" blue="0.8901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="0.5" id="HCp-bd-GEo"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FRZ-Vs-U1T">
+                                <rect key="frame" x="0.0" y="65" width="327" height="0.5"/>
+                                <color key="backgroundColor" red="0.84313725490196079" green="0.85490196078431369" blue="0.8901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="0.5" id="4cG-wU-sh2"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="vph-QH-Tbq" secondAttribute="trailing" id="0sm-cQ-v7j"/>
+                            <constraint firstItem="dBT-kd-f6h" firstAttribute="leading" secondItem="sWu-Lw-8OC" secondAttribute="leading" constant="10" id="2g5-nN-pgK"/>
+                            <constraint firstItem="fVB-E7-uK3" firstAttribute="leading" secondItem="dBT-kd-f6h" secondAttribute="trailing" id="2iC-6W-rEt"/>
+                            <constraint firstItem="vph-QH-Tbq" firstAttribute="top" secondItem="sWu-Lw-8OC" secondAttribute="top" id="5xu-UZ-IqV"/>
+                            <constraint firstAttribute="trailing" secondItem="FRZ-Vs-U1T" secondAttribute="trailing" id="CLm-cQ-j0t"/>
+                            <constraint firstItem="dBT-kd-f6h" firstAttribute="centerY" secondItem="sWu-Lw-8OC" secondAttribute="centerY" id="Fss-cl-noq"/>
+                            <constraint firstItem="FRZ-Vs-U1T" firstAttribute="leading" secondItem="sWu-Lw-8OC" secondAttribute="leading" id="Glb-2O-4MA"/>
+                            <constraint firstAttribute="bottom" secondItem="FRZ-Vs-U1T" secondAttribute="bottom" id="KzR-Sd-l8j"/>
+                            <constraint firstAttribute="trailing" secondItem="fVB-E7-uK3" secondAttribute="trailing" constant="10" id="XPP-vg-6sJ"/>
+                            <constraint firstItem="fVB-E7-uK3" firstAttribute="centerY" secondItem="sWu-Lw-8OC" secondAttribute="centerY" id="kA5-jA-gfe"/>
+                            <constraint firstItem="vph-QH-Tbq" firstAttribute="leading" secondItem="sWu-Lw-8OC" secondAttribute="leading" id="mzb-0v-cfN"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.84313725490000002" green="0.85490196080000003" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="sWu-Lw-8OC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="XNu-5A-vJ1"/>
+                    <constraint firstAttribute="bottom" secondItem="sWu-Lw-8OC" secondAttribute="bottom" id="glc-dO-DJH"/>
+                    <constraint firstAttribute="trailing" secondItem="sWu-Lw-8OC" secondAttribute="trailing" id="uji-jV-ZdJ"/>
+                    <constraint firstItem="sWu-Lw-8OC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="uoP-Dc-NCi"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="iTimeLabel" destination="dBT-kd-f6h" id="BmF-tL-hzJ"/>
+                <outlet property="iTopLineView" destination="vph-QH-Tbq" id="z2x-Ko-Pow"/>
+            </connections>
+            <point key="canvasLocation" x="200.5" y="220"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="gerenxinxi_back.png" width="6" height="11"/>
+    </resources>
+</document>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CHCPGQutationChangeCityViewController">
+            <connections>
+                <outlet property="iNavBar" destination="RCG-4R-DoL" id="vHc-xI-8lz"/>
+                <outlet property="iTableView" destination="qhM-d2-iVU" id="O4n-nL-lqr"/>
+                <outlet property="iTableViewBotConstraint" destination="WO2-nw-Yw2" id="GT8-Uz-c9l"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RCG-4R-DoL">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="54d-tP-uYT"/>
+                    </constraints>
+                    <items>
+                        <navigationItem id="RW7-Jd-1oD"/>
+                    </items>
+                </navigationBar>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sOW-nE-BtM">
+                    <rect key="frame" x="0.0" y="20" width="64" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="Fm2-le-DfC"/>
+                        <constraint firstAttribute="width" constant="64" id="Htc-Df-IRA"/>
+                    </constraints>
+                    <state key="normal" image="back.png"/>
+                    <connections>
+                        <action selector="leftButtonAcion:" destination="-1" eventType="touchUpInside" id="Oqo-UF-ose"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qhM-d2-iVU">
+                    <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.95294117649999999" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="sectionIndexBackgroundColor" red="0.93725490199999995" green="0.95294117649999999" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="qhL-K2-S3r"/>
+                        <outlet property="delegate" destination="-1" id="l8h-sd-XVn"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="qhM-d2-iVU" firstAttribute="top" secondItem="RCG-4R-DoL" secondAttribute="bottom" id="1Wf-Qt-cxV"/>
+                <constraint firstItem="sOW-nE-BtM" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="1aS-Js-4ca"/>
+                <constraint firstAttribute="bottom" secondItem="qhM-d2-iVU" secondAttribute="bottom" id="WO2-nw-Yw2"/>
+                <constraint firstItem="RCG-4R-DoL" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="dVh-hz-x31"/>
+                <constraint firstItem="RCG-4R-DoL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="hTV-6E-Pih"/>
+                <constraint firstAttribute="trailing" secondItem="RCG-4R-DoL" secondAttribute="trailing" id="iDt-dx-4F7"/>
+                <constraint firstAttribute="trailing" secondItem="qhM-d2-iVU" secondAttribute="trailing" id="iFU-UC-qab"/>
+                <constraint firstItem="qhM-d2-iVU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="s2v-SH-533"/>
+                <constraint firstItem="sOW-nE-BtM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="zvl-Wt-tIV"/>
+            </constraints>
+            <point key="canvasLocation" x="104" y="39"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back.png" width="44" height="44"/>
+    </resources>
+</document>

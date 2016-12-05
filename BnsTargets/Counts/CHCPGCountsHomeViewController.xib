@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CHCPGCountsHomeViewController">
+            <connections>
+                <outlet property="iGoldImage" destination="zfH-PN-LS2" id="9aM-RP-Kwp"/>
+                <outlet property="iGoldLabel" destination="JEZ-v5-QZE" id="kFS-dR-Iw5"/>
+                <outlet property="iNavBar" destination="IkE-QO-9dl" id="bzW-EA-0aU"/>
+                <outlet property="iTitleImage" destination="YLs-gA-SHo" id="zys-Nd-PE7"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IkE-QO-9dl">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="1FX-ue-scA"/>
+                    </constraints>
+                    <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <textAttributes key="titleTextAttributes">
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </textAttributes>
+                    <items>
+                        <navigationItem id="sKm-uT-3FX"/>
+                    </items>
+                </navigationBar>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="navigation_count.png" translatesAutoresizingMaskIntoConstraints="NO" id="YLs-gA-SHo">
+                    <rect key="frame" x="275" y="29" width="50" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="8fV-Go-Jbv"/>
+                        <constraint firstAttribute="height" constant="25" id="oAU-mJ-JuT"/>
+                    </constraints>
+                </imageView>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hq_jinbi_.png" translatesAutoresizingMaskIntoConstraints="NO" id="zfH-PN-LS2">
+                    <rect key="frame" x="10" y="30" width="18" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="18" id="Hzh-gY-NOi"/>
+                        <constraint firstAttribute="width" constant="18" id="gXD-Wj-UKq"/>
+                    </constraints>
+                </imageView>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JEZ-v5-QZE" userLabel="金币">
+                    <rect key="frame" x="35" y="39" width="0.0" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="IkE-QO-9dl" secondAttribute="trailing" id="6pL-BI-nKb"/>
+                <constraint firstItem="JEZ-v5-QZE" firstAttribute="leading" secondItem="zfH-PN-LS2" secondAttribute="trailing" constant="7" id="GyH-aV-Gdn"/>
+                <constraint firstItem="YLs-gA-SHo" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="29" id="dQJ-qF-5uo"/>
+                <constraint firstItem="JEZ-v5-QZE" firstAttribute="centerY" secondItem="zfH-PN-LS2" secondAttribute="centerY" id="fiX-W4-9kj"/>
+                <constraint firstItem="YLs-gA-SHo" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="hvS-e1-MAu"/>
+                <constraint firstItem="IkE-QO-9dl" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="vap-JB-fzn"/>
+                <constraint firstItem="zfH-PN-LS2" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="30" id="wng-ET-cyO"/>
+                <constraint firstItem="IkE-QO-9dl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="xX3-uE-l1c"/>
+                <constraint firstItem="zfH-PN-LS2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="zsf-uZ-a4e"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="hq_jinbi_.png" width="17" height="17"/>
+        <image name="navigation_count.png" width="50" height="25"/>
+    </resources>
+</document>

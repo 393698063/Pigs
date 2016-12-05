@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CHCPGProfessorHomeViewController">
+            <connections>
+                <outlet property="iFreshTableView" destination="uej-z9-2fb" id="YRX-zE-Trh"/>
+                <outlet property="iNavBar" destination="aVu-UX-k0u" id="pQQ-Kq-ggB"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aVu-UX-k0u">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="mC0-EA-5uc"/>
+                    </constraints>
+                    <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <textAttributes key="titleTextAttributes">
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </textAttributes>
+                    <items>
+                        <navigationItem id="Ic1-cK-WLh"/>
+                    </items>
+                </navigationBar>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="navigation_expert.png" translatesAutoresizingMaskIntoConstraints="NO" id="dYS-b0-ije">
+                    <rect key="frame" x="275" y="29" width="50" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="Qk9-UV-j3F"/>
+                        <constraint firstAttribute="height" constant="25" id="RWD-Ba-3q8"/>
+                    </constraints>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="uej-z9-2fb">
+                    <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="aVu-UX-k0u" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="J09-yd-8Ow"/>
+                <constraint firstItem="dYS-b0-ije" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="29" id="Jme-Zg-1zj"/>
+                <constraint firstItem="uej-z9-2fb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="O16-Ef-hFc"/>
+                <constraint firstAttribute="trailing" secondItem="uej-z9-2fb" secondAttribute="trailing" id="PRU-If-zwh"/>
+                <constraint firstItem="dYS-b0-ije" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Yxx-te-G79"/>
+                <constraint firstAttribute="trailing" secondItem="aVu-UX-k0u" secondAttribute="trailing" id="eMt-hM-7Kl"/>
+                <constraint firstItem="uej-z9-2fb" firstAttribute="top" secondItem="aVu-UX-k0u" secondAttribute="bottom" id="h8J-jE-BWn"/>
+                <constraint firstItem="aVu-UX-k0u" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="iwU-ag-bkQ"/>
+                <constraint firstAttribute="bottom" secondItem="uej-z9-2fb" secondAttribute="bottom" constant="49" id="spo-if-VeG"/>
+            </constraints>
+            <point key="canvasLocation" x="70" y="135"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="navigation_expert.png" width="50" height="25"/>
+    </resources>
+</document>

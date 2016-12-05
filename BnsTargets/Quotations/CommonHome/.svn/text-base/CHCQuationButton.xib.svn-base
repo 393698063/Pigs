@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="center" id="iN0-l3-epB" customClass="CHCQuationButton">
+            <rect key="frame" x="0.0" y="0.0" width="140" height="93"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kao-uG-76A">
+                    <rect key="frame" x="0.0" y="0.0" width="140" height="93"/>
+                    <color key="backgroundColor" red="0.88235294117647056" green="0.31764705882352939" blue="0.31372549019607843" alpha="1" colorSpace="calibratedRGB"/>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hqsy_fj_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="DI9-4v-LIC">
+                    <rect key="frame" x="37" y="16" width="66" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="hCR-Kr-e3j"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Qm-po-bp4" userLabel="titleLabel">
+                    <rect key="frame" x="37" y="67" width="66" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Kao-uG-76A" secondAttribute="bottom" id="2Qq-c3-TJ4"/>
+                <constraint firstItem="Kao-uG-76A" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="533-VX-m8Y"/>
+                <constraint firstItem="6Qm-po-bp4" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="37" id="CBC-of-QZI"/>
+                <constraint firstItem="6Qm-po-bp4" firstAttribute="top" secondItem="DI9-4v-LIC" secondAttribute="bottom" constant="4" id="FWi-Wk-e29"/>
+                <constraint firstAttribute="trailing" secondItem="Kao-uG-76A" secondAttribute="trailing" id="Jo2-B7-6Ns"/>
+                <constraint firstAttribute="bottom" secondItem="6Qm-po-bp4" secondAttribute="bottom" constant="20" id="ZV6-6Z-xjS"/>
+                <constraint firstItem="DI9-4v-LIC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="37" id="bZ1-qd-pnb"/>
+                <constraint firstItem="Kao-uG-76A" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="kDm-RU-9Lb"/>
+                <constraint firstAttribute="trailing" secondItem="6Qm-po-bp4" secondAttribute="trailing" constant="37" id="paj-Og-sd5"/>
+                <constraint firstAttribute="trailing" secondItem="DI9-4v-LIC" secondAttribute="trailing" constant="37" id="xZK-i1-Itg"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="backButton" destination="Kao-uG-76A" id="kmd-Gw-Egb"/>
+                <outlet property="titleImageView" destination="DI9-4v-LIC" id="C8f-NR-1k1"/>
+                <outlet property="titleLabel" destination="6Qm-po-bp4" id="I3p-FX-elT"/>
+            </connections>
+            <point key="canvasLocation" x="261" y="272.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="hqsy_fj_icon.png" width="24" height="25"/>
+    </resources>
+</document>
